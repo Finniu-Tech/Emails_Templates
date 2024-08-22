@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Emails</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #eefbff;
+        border-radius: 10px;
+      }
+
+      .light-mode-image {
+        display: block;
+      }
+
+      .dark-mode-image {
+        display: none;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .container {
+          background-color: #2c2c2c;
+        }
+
+        .light-mode-image {
+          display: none;
+        }
+
+        .dark-mode-image {
+          display: block;
+          max-width: 100%;
+          height: 214px;
+        }
+      }
+
+      h2,
+      p {
+        font-size: 14px;
+      }
+
+      h2 {
+        font-weight: bold;
+      }
+
+      p {
+        line-height: 1.5;
+        text-align: justify;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        h2,
+        p {
+          color: white;
+        }
+      }
+
+      .header img {
+        width: 57px;
+      }
+
+      .content {
+        padding: 35px;
+        color: #333333;
+      }
+
+      .button {
+        text-align: center;
+        margin: 20px 0;
+        background-color: #0d3a5c;
+        border-radius: 12px;
+        width: 230px;
+        height: 40px;
+        line-height: 40px;
+      }
+      @media (prefers-color-scheme: dark) {
+        .button {
+          background-color: #a2e6fa;
+        }
+      }
+
+      .button a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      @media (prefers-color-scheme: dark) {
+        .button a {
+          color: #092a42;
+        }
+      }
+
+      .banner img {
+        width: 100%;
+        height: 186px;
+        vertical-align: middle;
+      }
+
+      .header {
+        text-align: center;
+        background-color: #092a42;
+        width: 100%;
+      }
+      @media (prefers-color-scheme: dark) {
+        .header {
+          background-color: #a2e6fa;
+        }
+      }
+
+      .light-mode-logo {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .dark-mode-logo {
+        display: none;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .light-mode-logo {
+          display: none;
+        }
+
+        .dark-mode-logo {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+
+      .container-helper {
+        background-color: #cff4ff;
+        font-size: 12px;
+        width: 240px;
+        height: 237px;
+        border-radius: 20px;
+        text-align: center;
+        margin: 0 auto;
+      }
+      @media (prefers-color-scheme: dark) {
+        .container-helper {
+          background-color: #0d3a5c;
+        }
+      }
+
+      .container-helper img {
+        width: 60px;
+        margin-bottom: 10px;
+      }
+
+      .container-helper p {
+        line-height: 18px;
+        width: 220px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .footer {
+        background-color: #000000;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: white;
+        box-sizing: border-box;
+      }
+
+      .footer p {
+        line-height: 1.5;
+        color: #9d9d9d;
+        font-size: 10px;
+        text-align: center;
+      }
+
+      .socials {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .socials img {
+        max-width: 120px;
+        height: 38px;
+        margin: 10px 0;
+      }
+
+      .socials-container {
+        background-color: #242424;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        max-width: 600px;
+      }
+
+      .socials-container .socials img {
+        margin: 0 5px;
+        height: 30px;
+        width: 30px;
+      }
+
+      .socials-container .socials img:last-child {
+        height: 23.8px;
+        width: 28px;
+        margin-bottom: 3px;
+      }
+
+      .link {
+        color: #0d3a5c;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .link {
+          color: #a2e6fa;
+        }
+      }
+
+      .container-text-reinvestment {
+        background-color: #d5f6ff;
+        padding: 20px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .container-text-reinvestment {
+          background-color: #014464;
+        }
+      }
+    </style>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+    "
+  >
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://i.ibb.co/R3XNNL0/logo-finniu.png"
+          alt="logo"
+          class="light-mode-logo"
+        />
+
+        <img
+          src="https://i.ibb.co/mttsmhg/logo-finniu-dark.png"
+          alt="logo dark"
+          class="dark-mode-logo"
+          style="width: 60px"
+        />
+      </div>
+
+      <div class="banner">
+        <img
+          src="https://i.ibb.co/JdmybyD/Inversio-n-Por-Finalizar.png"
+          alt="background"
+          class="light-mode-image"
+        />
+
+        <img
+          src="https://i.ibb.co/j5pYS5B/Tu-Inversionpor-Finalizar-Dark.png"
+          alt="background dark"
+          class="dark-mode-image"
+        />
+      </div>
+      <div class="content">
+        <h2>Tu inversión está por finalizar</h2>
+        <h2>¡Hola [Nombre del Usuario]!</h2>
+        <p>
+          Esperamos que se encuentre bien. Queremos recordarle que su inversión
+          actual con Finniu vencerá en {{número de días }} días.
+          <br />
+          <br />
+          <strong>Tenemos las siguientes opciones para ti: </strong>
+        </p>
+
+        <div style="width: 100%; max-width: 600px; margin: 0 auto">
+          <div
+            style="
+              background-color: #0d3a5c;
+              color: white;
+              padding: 20px;
+              margin-bottom: 10px;
+              border-radius: 10px;
+            "
+          >
+            <h1 style="font-size: 14px">
+              <span style="font-size: 28px"> 1 </span> Re-inversión de Capital
+            </h1>
+
+            <p>
+              Puede optar por reinvertir el monto total de su capital inicial en
+              una nueva inversión con Finniu. Esto le permitirá seguir
+              beneficiándose de nuestras atractivas tasas de rendimiento.
+            </p>
+          </div>
+
+          <div
+            class="text-capital"
+            style="
+              background-color: #cfc3ff;
+
+              padding: 20px;
+              margin-bottom: 10px;
+              border-radius: 10px;
+            "
+          >
+            <h1 style="font-size: 14px">
+              <span style="font-size: 28px"> 2 </span>Aumento de capital
+            </h1>
+            <p style="color: #000000">
+              Si desea aumentar el capital de su inversión, puede añadir fondos
+              adicionales. Esto maximizará su potencial de ganancias futuras.
+            </p>
+          </div>
+
+          <div
+            style="
+              background-color: #a2e6fa;
+              color: black;
+              padding: 20px;
+              margin-bottom: 10px;
+              border-radius: 10px;
+            "
+          >
+            <h1 style="font-size: 14px">
+              <span style="font-size: 28px"> 3 </span>Retiro de capital
+            </h1>
+            <p style="color: #000000">
+              Si prefiere retirar su capital al finalizar la inversión, puede
+              hacerlo y recibir el monto en su cuenta bancaria registrada.
+            </p>
+          </div>
+        </div>
+
+        <div class="container-text-reinvestment">
+          <p style="text-align: justify; margin: 0">
+            <span style="font-size: 16px; font-weight: bold">
+              ¿Quieres reinvertir o aumentar a tu capital?</span
+            ><br /><br />
+            Si desea reinvertir o aumentar su capital, le recomendamos hacerlo
+            lo antes posible dentro de los próximos {{days_remaining}} días.<br /><br />
+            Recuerde que su operación de re-inversión se activará el
+            {{investment_end_date}}. Si opta por el aumento de capital, esta se
+            activará posterior a la fecha de finalización, dentro de un máximo
+            de 24 a 72 horas por la validación necesaria. Una vez iniciado el
+            proceso de re-inversión, no se podrá solicitar ningún tipo de
+            reembolso o devolución.
+          </p>
+        </div>
+        <br />
+
+        <p>
+          <strong>¿Quieres retirar tu capital?</strong>
+          <br />
+          <br />
+          Para retirar su capital, asegúrese de confirmar su solicitud al menos
+          3 días antes de la fecha de vencimiento para evitar demoras.
+        </p>
+
+        <hr style="border: 1px solid #e2e2e2; width: 100%" />
+
+        <h1 style="font-size: 14px">Detalles de tu inversión</h1>
+
+        <h2 style="font-weight: normal">
+          <strong>Fondo de inversión</strong> <br />
+          Fondo Inversión Empresarial
+        </h2>
+        <h2 style="font-weight: normal">
+          <strong>Monto invertido</strong> <br />
+          s/10,000
+        </h2>
+        <h2 style="font-weight: normal">
+          <strong>Banco del depósito del capital</strong> <br />
+          Banco Interbank
+        </h2>
+        <h2 style="font-weight: normal">
+          <strong>Rentabilidad generada </strong> <br />
+          S/445
+        </h2>
+
+        <h2 style="font-weight: normal">
+          <strong>Fecha de inicio</strong> <br />
+          12/09/2024
+        </h2>
+        <h2 style="font-weight: normal">
+          <strong>Fecha de fin</strong> <br />
+          12/09/2025
+        </h2>
+
+        <hr style="border: 1px solid #e2e2e2; width: 100%" />
+        <p>
+          Un abrazo,<br /><em><strong>El equipo de Finniu</strong></em>
+        </p>
+
+        <div class="container-helper">
+          <img
+            src="https://i.ibb.co/tYjykvz/Necesitas-Ayuda.png"
+            alt="image-helper"
+          />
+
+          <p>
+            <strong>¿Necesitas ayuda? </strong><br />Si tienes dudas o
+            comentarios, escríbenos a
+            <strong>
+              <a
+                href="mailto:operaciones@finniu.com"
+                target="_blank"
+                class="link"
+                >operaciones@finniu.com</a
+              >
+            </strong>
+            o revisa las
+            <strong>
+              <a
+                href="https://finniuapp.notion.site/Preguntas-Frecuentes-f7f77872d34a4de3a9e12d5fc58421ff"
+                target="_blank"
+                class="link"
+                >FAQ,</a
+              >
+            </strong>
+            estaremos aquí para ayudarte en cada paso del camino.
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          ¡Disponible en todas lados!<br />
+          Descarga nuestra aplicación para Android y iOS.
+        </p>
+        <div class="socials">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.finniu"
+            target="_blank"
+          >
+            <img
+              src="https://i.ibb.co/M72NJNW/google-play-badge.png"
+              alt="Google Play"
+            />
+          </a>
+          <a
+            href="https://apps.apple.com/pe/app/finniu/id6449205870"
+            target="_blank"
+          >
+            <img src="https://i.ibb.co/wCswLg2/app-store.png" alt="App Store" />
+          </a>
+        </div>
+        <div class="socials-container">
+          <p>Síguenos en nuestras redes sociales</p>
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/finniuapp?mibextid=ZbWKwL"
+              target="_blank"
+              ><img
+                src="https://i.ibb.co/Htc4XBJ/icon-facebook.png"
+                alt="Facebook"
+                style="height: 30px; width: 30px"
+            /></a>
+            <a
+              href="https://www.instagram.com/finniu.app?igsh=MWRsZGRpMzdncXZ1MA=="
+              target="_blank"
+              ><img
+                src="https://i.ibb.co/80bpjkp/icon-instagram.png"
+                alt="Instagram"
+                style="height: 30px; width: 30px; margin-left: 15px"
+            /></a>
+            <a href="https://www.linkedin.com/company/finniu/" target="_blank"
+              ><img
+                src="https://i.ibb.co/61XchJX/icon-linkedin.png"
+                alt="LinkedIn"
+                style="
+                  height: 23.8px;
+                  width: 28px;
+                  margin-left: 15px;
+                  margin-bottom: 5px;
+                "
+            /></a>
+          </div>
+        </div>
+        <p>Copyright © 2024 <br />Finniu App</p>
+        <p style="font-size: 10px">
+          A better company begins with a personalized employee experience.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
